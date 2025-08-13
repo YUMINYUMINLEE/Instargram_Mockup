@@ -1,0 +1,324 @@
+.app {
+    display: grid;
+    grid-template-columns: 350px 1fr 600px;
+    gap: 0px;
+    min-height: 100vh;
+}
+
+main {
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    background: #eee;
+}
+
+/* 사이드바 */
+.logo {
+    display: block;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 25px
+}
+
+.logo img {
+    width: 110px;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+    .logo img {
+        width: 90px;
+    }
+}
+
+@media (max-width: 740px) {
+    .logo img {
+        width: 70px;
+    }
+}
+
+.sidebar {
+    padding: 20px 10px;
+    background-color: white;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar-bottom {
+    margin-top: 250px;
+}
+
+.side-nav a,
+.sidebar-bottom a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 12px 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.side-nav img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.sidebar-bottom img {
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+}
+/* 사이드바 끝 */
+
+/* 스토리 */
+.stories {
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+    overflow-x: auto;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 70px;
+}
+
+.story img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #f1f1f1;
+    padding: 3px;
+    object-fit: cover;
+}
+
+.story .username {
+    margin-top: 6px;
+    font-size: 12px;
+    text-align: center;
+}
+/* 스토리 끝 */
+
+/* 피드 */
+.feed {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-left: 350px;
+}
+
+.post {
+    background: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.more-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.more-icon:hover {
+    opacity: 0.7;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.post-date {
+    color: #999;
+    font-size: 12px;
+}
+
+.post-image {
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+
+.left-icons, .right-icons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.action-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.action-icon:hover {
+    opacity: 0.7;
+}
+
+.post-likes,
+.post-caption,
+.post-comments,
+.post-add-comment {
+    padding: 0 12px 8px;
+    font-size: 14px;
+}
+
+.post-likes {
+    font-weight: bold;
+}
+
+.post-comments {
+    color: #999;
+}
+
+.post-add-comment {
+    color: #999;
+}
+
+.post-image-wrapper {
+    width: 100%;
+    max-width: 468px;
+    aspect-ratio: 468 / 585;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.post-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content-separator {
+    border-bottom: 1px solid #dbdbdb;
+    margin: 16px auto 0;
+    width: 100%;
+    max-width: 468px;
+}
+/* 피드 끝 */
+
+/* 우측 추천 */
+.right-suggestions {
+    width: 350px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 60px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.right-suggestions img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.my-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.user-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sub-info {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.switch-btn {
+    background: none;
+    border: none;
+    color: #0095f6;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.suggestions-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.suggestions-header .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8e8e8e;
+}
+
+.suggestions-header .see-all {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.follow-btn {
+    background: none;
+    border: none;
+    color: #0095f6;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* 우측 추천 끝 */
